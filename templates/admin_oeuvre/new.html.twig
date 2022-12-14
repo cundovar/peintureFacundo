@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Oeuvres{% endblock %}
+
+{% block body %}
+    <h1>ajouter</h1>
+
+    {# <a class="btn btn-dark my-3" href="{{ path('produit_afficher') }}">Retour</a> #}
+
+    <div class="col-md-6 mx-auto">
+
+        {# {{ form(formProduit) }} #}
+        {#
+            La fonction twig form() permet d'appeler entièrement le formulaire : de la balise ouvrante <form> à la balise fermante </form>
+        #}
+
+        {{ form_start(form) }} {# balise ouvrante <form> #}
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form_row(form.titre) }}
+                    {# {{ form_row(formProduit.prix, {'label' : "jkhjkuhjk", 'attr' : {"class" : "bg-danger"}} ) }} #}
+
+
+
+                    {#
+                        form_row() = form_label() + form_errors() + form_widget() + form_help()
+                        {{ form_label(formProduit.prix) }}
+                        {{ form_errors(formProduit.prix) }}
+                        {{ form_widget(formProduit.prix) }}
+                        {{ form_help(formProduit.prix) }}
+                        ---------------------------------
+
+                        php  [ 'key' => 'value']
+                        twig { 'key' : "value"}
+                    #}
+
+                </div>
+
+                <div class="col-md-6">
+                    {{ form_row(form.prix) }}
+                </div>
+            </div>
+
+            
+            {{ form_row(form.image) }}
+            <div id="zone" class="text-center"></div>
+           
+
+            {# {{ form_rest(formProduit) }} #}
+            {{ form_row(form.stock) }}
+            {{ form_row(form.categorie) }}
+            {{ form_row(form.description) }}
+            {{ form_row(form.matieres) }}
+            {{ form_row(form.dimention) }}
+
+            <input type="submit" value="Ajouter" class="btn btn-success col-12 mt-3">
+
+        {{ form_end(form) }} {# balise fermante </form> #}
+
+        
+    </div>
+
+
+
+    {# 
+    <input type="submit" value="Ajouter" class="btn btn-success col-12 mt-3">
+    <button type="submit"  class="btn btn-success col-12 mt-3">Ajouter</button> 
+    #}
+
+{% endblock %}
+ 
+{% block javascripts %}
+ 
+         {{ encore_entry_script_tags('script') }}
+
+         <script> 
+         
+
+
+     let zone = document.getElementById('zone')
+ function loadFile(event)
+ {
+     console.log("test");
+
+       $("#zone").html("");
+    let image = document.createElement("img");
+    image.setAttribute("src", URL.createObjectURL(event.target.files[0]) );
+    image.setAttribute("class", "img300" );
+
+     zone.append(image);
+
+
+ }
+ 
+ </script>
+
+        {% endblock %} 
