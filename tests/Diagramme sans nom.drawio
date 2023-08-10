@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-10T15:22:42.761Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="9IBYMdcQHtgTwI5AudSQ" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-10T15:32:51.798Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="HltQDnKfAYvE6e41IRSI" version="21.6.6" type="github">
   <diagram name="Page-1" id="X5yiu0FX78xxfUfAtPjb">
     <mxGraphModel dx="1329" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -105,7 +105,7 @@
           <mxGeometry x="50" y="370" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-11" value="détail-commande" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="270" width="210" height="120" as="geometry" />
+          <mxGeometry x="470" y="320" width="210" height="120" as="geometry" />
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-13" value="nom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="75" y="1038" width="50" height="30" as="geometry" />
@@ -132,18 +132,18 @@
           <mxGeometry x="35" y="88" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-38" value="catégorie" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="430" width="210" height="120" as="geometry" />
+          <mxGeometry x="1310" y="180" width="210" height="120" as="geometry" />
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-39" value="oeuvre" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1172.5" y="670" width="100" height="120" as="geometry">
+          <mxGeometry x="1470" y="540" width="100" height="120" as="geometry">
             <mxRectangle x="100" y="90" width="80" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-40" value="nom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-39">
           <mxGeometry x="-2.5" y="18" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OttDLDanhumkcIIVTUDi-41" value="prix" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-39">
-          <mxGeometry x="2.5" y="40" width="40" height="30" as="geometry" />
+        <mxCell id="OttDLDanhumkcIIVTUDi-41" value="price" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-39">
+          <mxGeometry x="-2.5" y="40" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-42" value="matière" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-39">
           <mxGeometry x="-7.5" y="58" width="60" height="30" as="geometry" />
@@ -170,6 +170,24 @@
         </mxCell>
         <mxCell id="OttDLDanhumkcIIVTUDi-50" value="catégorie&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-46">
           <mxGeometry x="-7.5" y="80" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-51" value="name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="458" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-52" value="id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="618" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-53" value="commentaire" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="60" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-54" value="nom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-53">
+          <mxGeometry x="25" y="30" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-55" value="email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-53">
+          <mxGeometry x="25" y="60" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OttDLDanhumkcIIVTUDi-56" value="id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OttDLDanhumkcIIVTUDi-53">
+          <mxGeometry x="35" y="88" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
